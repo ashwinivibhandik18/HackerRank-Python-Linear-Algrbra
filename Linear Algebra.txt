@@ -1,0 +1,10 @@
+
+#Linear Algebra
+
+import numpy
+n=int(input())
+arr=[]
+for i in range(n):
+    arr.append(list(map(float,input().split())))
+arr=numpy.array(arr)
+print("{:.2}".format(numpy.linalg.det(arr)))
